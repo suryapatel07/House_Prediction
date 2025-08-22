@@ -8,9 +8,37 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-</head>
+    <style>
+   h1{
+    text-align: center;
+     margin: 10px;
+      padding: 10px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+   }
+   .overview{
+     margin: 15px;
+     padding: 15px;
+     width: 100%;
+     height: 300px;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+     border-radius: 15px;
+
+
+    
+   }
+   .overview p{
+    margin-top: 20px;
+    font-size: large;
+   }
+   .overview li{
+    margin-top: 20px;
+    font-size: large;
+   }
+    </style>
+  </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +62,48 @@
     </div>
   </div>
 </nav>
-  
-    <h1>We are using the project throught html css java script and also more on</h1>
+
+  <h1 >About Project</h1>
+  <div class="overview">
+    <h2>Project Overview</h2>
+    <p>This project aims to predict house prices based on various factors such as location, area, number of bedrooms,
+       and more. It is built using Python, Flask, HTML, CSS, and Bootstrap. 
+      The machine learning model ensures accuracy and helps buyers and sellers make better decisions.</p>
+  </div>
+  <div class="overview">
+    <h2>Objectives</h2>
+    <ul>
+       <li>Provide accurate house price predictions.</li>
+       <li>Help buyers and sellers in decision making.</li>
+       <li>Implement machine learning concepts in a real-world project.</li>
+    </ul>
+  </div>
+  <div class="overview">
+    <h2>Key Features</h2>
+    <ul>
+       <li>User-friendly interface.</li>
+       <li>Accurate ML-based predictions.</li>
+       <li>Scalable for future enhancements.</li>
+    </ul>
+  </div>
+  <div class="overview">
+    <h2>Future Scope</h2>
+    <p>In the major project phase, this system can be enhanced by adding more datasets, integrating live housing data APIs,
+       improving the model with deep learning, and deploying on cloud platforms for real-time usage.</p>
+  </div>
+  <div class="overview">
+    <h2>Technology Stack</h2>
+    <ul>
+       <li><b>Frontend:</b> HTML, CSS, Bootstrap</li>
+       <li><b>Backend:</b> Flask, Python</li>
+       <li><b>Machine Learning:</b> Scikit-learn, Pandas, NumPy</li>
+        <li><b>Database:</b> MySQL / SQLite (if required)</li>
+
+    </ul>
+  </div>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+  Project: <strong>House Price Prediction</strong> | Semester 5 <br>
+  © 2025 Surya Prakash Patel & Swapnil Kesarwani
+</footer>
 </body>
 </html>

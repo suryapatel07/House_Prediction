@@ -12,19 +12,61 @@
     .mimage{
       width: 100%;
       height: 750PX;
-      border: 2px solid red;
-      background-image: url("mimage2.jpg");
-      background-size: contain;
-      background-position:center;
-      background-repeat: no-repeat;
       
-    
-    }
+      background-image: url("mimage2.jpg");
+      background-size: 100% 100%;
+     }
+     .head{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 80px;
+      width: 100%;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border-radius: 25px;
+      background-color: #748DAE;
+      padding: 15px;
+     }
+     .card{
+      height: 400px;
+      width: 100%;
+      
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+     }
+     .esame{
+      height: 80%;
+      width: 30%;
+      
+       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       border-radius: 10px;
+     }
+     .esame p{
+      margin-top: 35px;
+      font-size: large;
+     }
+     #howhead{
+      height: 50px;
+      width: 100%;
+     
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+     }
   
   </style>
 </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,9 +90,50 @@
     </div>
   </div>
 </nav>
-<div class="mimage">
+<div class="head">
+      <h1>Welcome to house Price Predicotor</h1>
+      <p>A Machine Learning based web app to estimate house prices instantly and accurately.</p>
+     </div>
+<div class="mimage"></div>
+<h1 style="text-align: center;margin: 9px;" id="howhead">How It Works</h1>
+  <div class="card">
+    <div class="esame" id="easy">
+          <h3>📝Enter Details</h3>
+          
+          <p>👉The user fills in property details like location,
+             area (sq. ft.), number of bedrooms, bathrooms, 
+             and other features in the input form</p>
+             <P>📝Example: “A flat in Lucknow, 1200 sq. ft., 2 BHK, 2 bathrooms.”</P>
+         
+        </div>
+    <div class="esame" id="accurate" >
+      <h3>⚙️Model Predicts</h3>
+      <P>👉The system takes the input data, processes it through the trained machine learning model, and analyzes past housing data.</P>
+      <p>📝It uses ML algorithms (like Linear Regression / Random Forest) to calculate the most probable price.</p>
+    </div>
+    <div class="esame" id="buyers">
+      <h3>💰Get Price</h3>
+      <p>👉The user instantly gets the predicted market value of the house</p>
+      <p>📝Example: “Estimated Price: ₹ 42 Lakhs”</p>
+    </div>
+  </div>
 
-</div>
+    <div class="card">
+    <div class="esame" id="easy">
+      
+    </div>
+    <div class="esame" id="accurate" >
+
+    </div>
+    <div class="esame" id="buyers">
+
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+  Project: <strong>House Price Prediction</strong> | Semester 5 <br>
+  © 2025 Surya Prakash Patel & Swapnil Kesarwani
+</footer>
+
 
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

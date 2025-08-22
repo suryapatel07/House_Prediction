@@ -8,9 +8,46 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+    <style>
+      .head{
+        margin:10px;
+        text-align: center;
+        height: 100px;
+        width: 100%;
+        border-radius: 9px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+      .surya{
+        margin: 10px;
+        height: 300px;
+        width: 100%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .photo{
+        height: 80%;
+        width: 15%;
+        border-radius: 15px;
+        box-shadow: 10px 10px 30px #131D4F;
+    
+        background-image: url("SuryaPhoto.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .desc{
+        height: 80%;
+        width: 70%;
+         box-shadow: 5px 5px 15px rgba(224, 176, 55, 0.3);
+         padding: 10px;
+         border-radius: 20px;
+      }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +71,39 @@
     </div>
   </div>
 </nav>
-  
-    <h1>Surya Prakash Patel</h1>
-    <h1>Swapnil Kesharwani</h1>
+  <div class="head">
+    <h2>Meet our Team</h2>
+    <p>The brains behind House Price Prediction</p>
+  </div>
+  <div class="surya">
+    <div class="photo">
+
+    </div>
+    <div class="desc">
+    <h3>Surya Prakash Patel</h3>
+    <p><b>Role:</b> Frontend Developer</p>
+     <p><b>Contribution:</b>Designed and developed the user interface using HTML, CSS, Bootstrap, and Flask templates. Focused on creating a smooth user experience with responsive layouts.</p>
+    </div>
+  </div>
+  <div class="surya">
+    <div class="photo">
+
+    </div>
+    <div class="desc">
+    <h3>Swapnil Kesharwani</h3>
+    <p><b>Role:</b> Backend Developer</p>
+     <p><b>Contribution:</b>Worked on machine learning model integration, data preprocessing, and Flask backend logic. Ensured accurate predictions and smooth database connectivity.</p>
+    </div>
+  </div>
+  <div class="head" style="height: 200px; margin: 20px;">
+    <h2>Project Journey</h2>
+    <p>📌 Minor Project (Semester 5) → Basic House Price Predictor</p>
+    <p>🚀 Major Project (Semester 6) → Advanced Model + Deployment</p>
+    <p>🌍 Real-life Usability → Can help Buyers & Sellers</p>
+  </div>
+   <footer class="bg-dark text-white text-center py-3 mt-5">
+  Project: <strong>House Price Prediction</strong> | Semester 5 <br>
+  © 2025 Surya Prakash Patel & Swapnil Kesarwani
+</footer>
 </body>
 </html>
