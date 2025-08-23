@@ -5,7 +5,7 @@
 body{
     background-color:#dadce0;
 }
-.fixed-top{
+.sticky-top{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ main{
     
 }
 .mcontent{
-    margin-top: 120px;
+    margin-top: 50px;
     height: 600px;
     width: 80%;
      border-radius: 10px;
