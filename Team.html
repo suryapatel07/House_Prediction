@@ -10,11 +10,20 @@
 
     <style>
        body{
-        background-color:  #0b1020;
+        background-color:  white;
     }
     .chcolor{
-      color: #a5b4fc;
-;
+      color: #4f46e5;
+
+    }
+          .navbarme{
+      background: rgba(255, 255, 255, 0.596);
+       box-shadow: 5px 3px 4px gray;
+       border-radius: 100px;
+       margin-top: 5px;
+       padding-left: 30px;
+
+            
     }
       .head{
         margin:10px;
@@ -22,7 +31,8 @@
         height: 100px;
         width: 100%;
         border-radius: 9px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 5px 5px 15px gray;
+        background-color: #F1F6F9;
       }
       .surya{
         margin: 10px;
@@ -38,7 +48,7 @@
         height: 80%;
         width: 15%;
         border-radius: 15px;
-        box-shadow: 10px 10px 30px #131D4F;
+        box-shadow: 10px 10px 30px gray;
     
         background-image: url("SuryaPhoto.jpg");
         background-size: cover;
@@ -47,47 +57,53 @@
       .desc{
         height: 80%;
         width: 70%;
-         box-shadow: 5px 5px 15px rgba(224, 176, 55, 0.3);
+         box-shadow: 5px 5px 15px gray;
          padding: 10px;
          border-radius: 20px;
+         background-color: #F1F6F9;
       }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="navbarme">
+
+    <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand " href="index.html">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+        
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="Predict.html">Predict</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Aproject.html">about Project</a>
+          <a class="nav-link" href="Aproject.html">About Project</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Team.html">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link "  href="Contact.html">Contact us</a>
+          <a class="nav-link "  href="Contact.html">Contact Us</a>
         </li>
       </ul>
     </div>
-  </div>
 </nav>
+
+
+</div>
   <div class="head">
-    <h2 style="color: #e6e9f5;">Meet our Team</h2>
-    <p style="color: #a5b4fc;">The brains behind House Price Prediction</p>
+    <h2 style="color: #1f2937;">Meet our Team</h2>
+    <p style="color: #4f46e5;">The brains behind House Price Prediction</p>
   </div>
   <div class="surya">
     <div class="photo">
 
     </div>
     <div class="desc">
-    <h3 style="color: #e6e9f5;">Surya Prakash Patel</h3>
+    <h3 style="color: #1f2937;">Surya Prakash Patel</h3>
     <p class="chcolor"><b>Role:</b> Frontend Developer</p>
      <p class="chcolor"><b>Contribution:</b>Designed and developed the user interface using HTML, CSS, Bootstrap, and Flask templates. Focused on creating a smooth user experience with responsive layouts.</p>
     </div>
@@ -97,19 +113,20 @@
 
     </div>
     <div class="desc">
-    <h3 style="color: #e6e9f5;">Swapnil Kesharwani</h3>
+    <h3 style="color: #1f2937;">Swapnil Kesharwani</h3>
     <p class="chcolor"><b>Role:</b> Backend Developer</p>
      <p class="chcolor"><b>Contribution:</b>Worked on machine learning model integration, data preprocessing, and Flask backend logic. Ensured accurate predictions and smooth database connectivity.</p>
     </div>
   </div>
   <div class="head" style="height: 200px; margin: 20px;">
-    <h2 style="color: #e6e9f5;">Project Journey</h2>
+    <h2 style="color: #1f2937;">Project Journey</h2>
     <p class="chcolor">📌 Minor Project (Semester 5) → Basic House Price Predictor</p>
     <p class="chcolor">🚀 Major Project (Semester 6) → Advanced Model + Deployment</p>
     <p class="chcolor">🌍 Real-life Usability → Can help Buyers & Sellers</p>
   </div>
-   <footer class=" text-center py-3 mt-5"style="color: #a5b4fc; background-color: #111736;">
+    <footer class="text-center py-3 mt-5 " style="color:white; background-color: #3D3C42; border-radius: 20px;">
   Project: <strong>House Price Prediction</strong> | Semester 5 <br>
+  <a href="Privacy.html"style="color:#10B981; text-decoration:none; margin: 0 10px;">Privacy Policy</a> | <a href="Terms.html" style="color:#10B981; text-decoration:none; margin: 0 10px;">Terms and Conditions</a><br>
   © 2025 Surya Prakash Patel & Swapnil Kesarwani
 </footer>
 </body>
