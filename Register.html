@@ -1,172 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Register - House Price Prediction</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <style>
-    :root{
-      --bg: #f3f4f6;
-      --card: #ffffff;
-      --accent: #3B82F6;
-      --accent-dark: #2563EB;
-      --text-dark: #1f2937;
-      --shadow-dark: rgba(0,0,0,0.2);
-      --shadow-light: rgba(255,255,255,0.85);
-    }
+  
+   body{
+    min-height: 100vh;
+    background-color: white;
+     display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;
+     
 
-    body{
-      margin:0;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-      background: var(--bg);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      min-height:100vh;
-    }
-
-    .register-card{
-      background: linear-gradient(145deg, #ffffff, #e9e9ea);
-      border-radius:16px;
-      padding:40px 30px;
-      box-shadow: 12px 12px 28px var(--shadow-dark), -8px -8px 20px var(--shadow-light);
-      width:100%;
-      max-width:450px;
-      transition: transform .35s ease, box-shadow .35s ease;
-      perspective:1000px;
-    }
-
-    .register-card:hover{
-      transform: translateY(-6px) rotateX(2deg) rotateY(1deg);
-      box-shadow: 18px 18px 36px rgba(0,0,0,0.25), -8px -8px 22px rgba(255,255,255,0.9);
-    }
-
-    h2{
-      text-align:center;
-      margin-bottom:30px;
-      color: #14274E;
-    }
-
-    form{
-      display:flex;
-      flex-direction:column;
-      gap:16px;
-    }
-
-    label{
-      font-size:0.9rem;
-      margin-bottom:6px;
-      color:#374151;
-    }
-
-    input[type="text"], input[type="email"], input[type="password"]{
-      padding:12px 14px;
-      border-radius:10px;
-      border:1px solid rgba(16,24,40,0.08);
-      font-size:0.95rem;
-      outline:none;
-      transition: box-shadow .18s ease, transform .12s ease;
-    }
-
-    input:focus{
-      box-shadow: 0 6px 18px rgba(59,130,246,0.12);
-      transform: translateY(-2px);
-      border-color: rgba(59,130,246,0.35);
-    }
-
-    .btn{
-      padding:12px 0;
-      border:none;
-      border-radius:10px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
-      color:white;
-      font-weight:600;
-      cursor:pointer;
-      transition: transform .14s ease, box-shadow .14s ease;
-    }
-
-    .btn:active{
-      transform: translateY(2px);
-      box-shadow: 0 6px 16px rgba(37,99,235,0.12);
-    }
-
-    .links{
-      display:flex;
-      justify-content: space-between;
-      font-size:0.85rem;
-      margin-top:6px;
-    }
-
-    .links a{
-      color: var(--accent);
-      text-decoration:none;
-    }
-
-    .links a:hover{
-      text-decoration: underline;
-    }
-
-    @media (max-width:480px){
-      .register-card{padding:30px 20px;}
-    }
+   }
+   #cenregister{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+   }
+  
+   #regdiv{
+    background-color: #E8E8E8;
+    height: auto;
+    width: 30%;
+   box-shadow: 5px 3px 4px gray;
+   border-radius: 20px;
+   padding: 15px;
+   
+   }
+   #regdiv h1{
+    text-align: center;
+   }
+   .regarrange{
+      height: 40px;
+      width: 400px;
+      padding: 10px;
+      margin: 3px;
+      border-radius: 10px;
+      border: 1.5px solid #6E8CFB;
+   }
+   form label{
+    padding: 10px;
+   }
+   #RegButton{
+    height: auto;
+    padding: 10px;
+    width: 90%;
+    margin: 15px;
+    background-color: #0875e9;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+   }
+   
+   .alLogin{
+    display: flex;
+    justify-content: space-between;
+   }
+   .alLogin a{
+    text-decoration: none;
+   }
   </style>
 </head>
-<body>
-  <div class="register-card">
-    <h2>Register</h2>
-    <form id="registerForm" novalidate>
-      <div>
-        <label for="fullname">Full Name</label>
-        <input id="fullname" name="fullname" type="text" placeholder="Enter full name" required>
-      </div>
-      <div>
-        <label for="username">Username</label>
-        <input id="username" name="username" type="text" placeholder="Choose a username" required>
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" required>
-      </div>
-      <div>
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password" placeholder="Enter password" required>
-      </div>
-      <div>
-        <label for="confirmPassword">Confirm Password</label>
-        <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Re-enter password" required>
-      </div>
-      <button type="submit" class="btn">Register</button>
-      <div class="links">
-        <a href="login.html">Already have an account?</a>
-        <a href="forgot.html">Forgot Password?</a>
-      </div>
-    </form>
-  </div>
 
-  <script>
-    const form = document.getElementById('registerForm');
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      if(!form.checkValidity()){
-        form.reportValidity();
-        return;
-      }
-      const password = form.password.value.trim();
-      const confirm = form.confirmPassword.value.trim();
-      if(password !== confirm){
-        alert('Passwords do not match!');
-        return;
-      }
-      const data = {
-        fullname: form.fullname.value.trim(),
-        username: form.username.value.trim(),
-        email: form.email.value.trim(),
-        password: password
-      };
-      console.log('Registration submitted:', data);
-      alert('Registration submitted! (replace with server-side logic)');
-      form.reset();
-    });
-  </script>
+<body>
+
+  <div id="cenregister">
+   <div id="regdiv">
+     <h1>Register</h1>
+       <form id="registerForm" action="register_user.php" method="POST" novalidate>
+        <label for="fullName">Full Name</label>
+        <input class="regarrange" id="fullName" name="fullName" type="text" placeholder="Enter Your full Name" required>
+        <label for="userName">User Name</label>
+        <input class="regarrange" id="userName" name="userName" type="text" placeholder="Choose a User Name" required>
+        <label for="email">Email</label>
+        <input class="regarrange" id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="Password">Password</label>
+        <input class="regarrange" id="password" name="password" type="password" placeholder="Enter Password" required>
+        <label for="cPassword">confirm Password</label>
+        <input class="regarrange" id="cPassword" name="cPassword" type="password" placeholder="Re-enter password" required> 
+    
+        <button id="RegButton">Register</button>
+
+
+
+
+     </form>
+     <div class="alLogin">
+      <a href="#"> Already have an account</a>
+      <a href="#">Forgot Password</a>
+     </div>
+
+   </div>
+
+</div>
+   
+
 </body>
 </html>
