@@ -1,0 +1,218 @@
+
+    body{
+     background-color:white;
+    }
+    .navbarme{
+      background: rgba(255, 255, 255, 0.596);
+       box-shadow: 5px 3px 4px gray;
+       border-radius: 100px;
+       margin-top: 5px;
+       padding-left: 30px;
+
+            
+    }
+    .head{
+      margin-top:10px;
+      margin-left: 30px;
+      
+    }
+    .head h1{
+      font-size: 3.5rem;  /* Big and bold */
+      font-weight: 700;
+      color: #4f46e5;  
+    }
+    .head p {
+  font-size: 1.25rem;
+  color: #111827;     /* Soft accent */
+  margin-top: 15px;
+}
+    .mimage{
+       position: relative;
+
+      width: 100%;
+      height: 750PX;
+      background-image: url("asset/img/house.jpg");
+      background-size: 100% 100%;
+      overflow: hidden;
+
+     }
+
+/* background layers that will cross-fade */
+.mimage .bg-layer {
+  position: absolute;
+  inset: 0;                    /* top:0; right:0; bottom:0; left:0 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* fade duration (change 1s if you want) */
+  z-index: 0;
+}
+
+/* visible layer is shown */
+.mimage .bg-layer.visible {
+  opacity: 1;
+}
+
+/* ensure navbar and content sit above the background layers */
+.mimage .navbarme,
+.mimage .head {
+  position: relative;
+  z-index: 2;
+}
+/* Arrow button base styles */
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 12px 16px;
+  cursor: pointer;
+  z-index: 3;
+  transition: background 0.3s, transform 0.3s;
+}
+
+/* Left and right position */
+.slide-arrow.prev { left: 25px; }
+.slide-arrow.next { right: 25px; }
+
+/* Hover effect */
+.slide-arrow:hover {
+  background: rgba(0, 0, 0, 0.65);
+  transform: translateY(-50%) scale(1.1);
+}
+
+
+     
+     .card{
+      height: 400px;
+      width: 100%;
+      background-color: #E8E8E8; /* light grey */
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+        perspective: 10000px; /* Enables 3D depth */
+
+     }
+
+/* container — row layout */
+.how-card{
+  height: 400px;
+  width: 100%;
+  background-color: #E8E8E8;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  perspective: 10000px;
+  gap: 20px;              /* spacing between items */
+  box-sizing: border-box;
+  padding: 20px;
+  flex-wrap: nowrap;      /* force single row on large screens */
+}
+
+/* each card */
+.how-card .esame{
+  height: 80%;
+  flex: 0 1 30%;          /* flexible but ~30% width */
+  min-width: 220px;       /* prevents shrinking too small */
+  background-color: #F1F6F9;
+  box-shadow: 5px 3px 4px gray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* responsive: stack on small screens */
+@media (max-width: 880px){
+  .how-card{
+    flex-direction: column;
+    height: auto;
+    padding: 12px;
+  }
+  .how-card .esame{
+    width: 100%;
+    flex: none;
+    min-width: auto;
+    margin-bottom: 12px;
+    height: auto;
+  }
+}
+
+
+     .esame{
+      height: 80%;
+      width: 30%;
+      background-color: #F1F6F9;
+       box-shadow: 5px 3px 4px gray;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+        outline: none;
+       border-radius: 15px;
+
+     }
+     
+/* typed heading style + blinking cursor */
+.typed-heading {
+  color: #4f46e5;
+  font-size: 3rem;          /* adjust to match your design */
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Cursor */
+.typed-heading::after{
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1.05em;
+  margin-left: 8px;
+  vertical-align: middle;
+  background: #4f46e5;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+     .esame h3{
+       color: #1f2937; /* dark text */
+;
+     }
+     .esame p{
+      margin-top: 35px;
+      font-size: large;
+      color: #1e1b4b;
+     }
+     #howhead{
+      height: 50px;
+      width: 100%;
+     color: #1f2937;
+       box-shadow: 5px 3px 4px gray;
+       background-color: #EEEEEE;
+       border-radius: 100px;
+     }
+    
+     
+  
+  

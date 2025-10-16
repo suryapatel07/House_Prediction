@@ -1,83 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <style>
-   body{
-    min-height: 100vh;
-    background-color: white;
-     display: flex;
-    justify-content: center;
-    align-items: center;
-     
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login | House Price Prediction</title>
 
-   }
-   .loginPage{
-    height: auto;
-    width: 30%;
-    background-color: #E8E8E8;
-     box-shadow: 5px 3px 4px gray;
-     border-radius: 10px;
-
-
-   }
-   .loginPage h1{
-    text-align: center;
-   }
-   form label{
-    padding: 10px;
-    font-size: large;
-    margin-left: 15px;
-   }
-   .regarrange{
-      height: 40px;
-      width: 400px;
-      padding: 10px;
-      margin: 3px;
-      border-radius: 10px;
-      border: 1.5px solid #6E8CFB;
-      margin-left: 20px;
-      
-   }
-   #uLogin{
-    height: auto;
-    padding: 10px;
-    width: 90%;
-    margin: 20px;
-    background-color: #0875e9;
-    border-radius: 10px;
-    color: white;
-    font-size: large;
-   }
-   
-   .uRegister{
-    display: flex;
-    justify-content: space-between;
-    margin: 15px;
-   }
-   .uRegister a{
-    text-decoration: none;
-   }
-  </style>
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-  <div class="loginPage">
-    <h1>Login</h1>
-    <form>
-      <label for="userName">Username</label>
-      <input class="regarrange" id="userName" name="userName" type="text" placeholder="Enter Userame">
-      <label for="password">Password</label>
-      <input class="regarrange" id="password" name="password" type="password" placeholder="Enter password">
-      <button id="uLogin">Login</button>
-        </form>
-        <div class="uRegister">
-         <a href="Register.html">Register</a>
-         <a href="forgot.html">Forgot Password</a>
-        </div>  
-  </div>
+  <main class="wrap" role="main" aria-labelledby="login-title">
+    <header class="hero">
+      <div class="logo" aria-hidden="true">🏠</div>
+      <div>
+        <h1 id="login-title">House Price Predictor</h1>
+        <p>Sign in to access your dashboard</p>
+      </div>
+    </header>
+
+    <section class="card" aria-label="Login card">
+      <form id="loginForm" autocomplete="on" novalidate>
+        <div>
+          <label for="userName">Username or Email</label>
+          <input id="userName" name="userName" class="input" type="text" placeholder="you@domain.com or username" required aria-required="true">
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <div class="field-row">
+            <input id="password" name="password" class="input" type="password" placeholder="Enter password" required aria-required="true" minlength="6">
+            <button type="button" class="toggle-btn" id="togglePwd" aria-label="Show password">Show</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="remember"><input type="checkbox" id="remember" name="remember"> Remember me</label>
+          <a class="link" href="forgot.html">Forgot?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <div class="bottom-links" aria-hidden="false">
+          <div class="small">New here? <a class="link" href="Register.html">Create an account</a></div>
+          <div id="msg" class="helper" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="js_file/login.js"></script>
 </body>
 </html>

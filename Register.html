@@ -1,106 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <style>
-  
-   body{
-    min-height: 100vh;
-    background-color: white;
-     display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: center;
-     
-
-   }
-   #cenregister{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-   }
-  
-   #regdiv{
-    background-color: #E8E8E8;
-    height: auto;
-    width: 30%;
-   box-shadow: 5px 3px 4px gray;
-   border-radius: 20px;
-   padding: 15px;
-   
-   }
-   #regdiv h1{
-    text-align: center;
-   }
-   .regarrange{
-      height: 40px;
-      width: 400px;
-      padding: 10px;
-      margin: 3px;
-      border-radius: 10px;
-      border: 1.5px solid #6E8CFB;
-   }
-   form label{
-    padding: 10px;
-   }
-   #RegButton{
-    height: auto;
-    padding: 10px;
-    width: 90%;
-    margin: 15px;
-    background-color: #0875e9;
-    border-radius: 10px;
-    color: white;
-    font-size: large;
-   }
-   
-   .alLogin{
-    display: flex;
-    justify-content: space-between;
-   }
-   .alLogin a{
-    text-decoration: none;
-   }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register | House Price Predictor</title>
+   <link rel="stylesheet" href="css/register.css">
 </head>
-
 <body>
+  <main class="wrap" role="main" aria-labelledby="reg-title">
+    <header class="header">
+      <div class="logo" aria-hidden="true">🏠</div>
+      <div>
+        <h1 id="reg-title">Create account</h1>
+        <p>Register to use House Price Predictor</p>
+      </div>
+    </header>
 
-  <div id="cenregister">
-   <div id="regdiv">
-     <h1>Register</h1>
-       <form id="registerForm" action="register_user.php" method="POST" novalidate>
-        <label for="fullName">Full Name</label>
-        <input class="regarrange" id="fullName" name="fullName" type="text" placeholder="Enter Your full Name" required>
-        <label for="userName">User Name</label>
-        <input class="regarrange" id="userName" name="userName" type="text" placeholder="Choose a User Name" required>
-        <label for="email">Email</label>
-        <input class="regarrange" id="email" name="email" type="email" placeholder="you@example.com" required>
-        <label for="Password">Password</label>
-        <input class="regarrange" id="password" name="password" type="password" placeholder="Enter Password" required>
-        <label for="cPassword">confirm Password</label>
-        <input class="regarrange" id="cPassword" name="cPassword" type="password" placeholder="Re-enter password" required> 
-    
-        <button id="RegButton">Register</button>
+    <section class="body" aria-label="Registration form">
+      <form id="registerForm" action="register_user.php" method="POST" novalidate>
+        <div>
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" class="input" type="text" placeholder="Your full name" required />
+        </div>
 
+        <div>
+          <label for="userName">Username</label>
+          <input id="userName" name="userName" class="input" type="text" placeholder="Choose a username" required />
+        </div>
 
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" class="input" type="email" placeholder="you@example.com" required />
+        </div>
 
+        <div>
+          <label for="password">Password</label>
+          <div class="field-row">
+            <input id="password" name="password" class="input" type="password" placeholder="Create password" required minlength="6" />
+            <button type="button" class="toggle-btn" id="togglePwd" aria-label="Show password">Show</button>
+          </div>
+          <div class="pw-meter" aria-hidden="true"><i id="pwBar"></i></div>
+          <div class="meta" id="pwText">Use 8+ characters, mix letters & numbers for stronger password.</div>
+        </div>
 
-     </form>
-     <div class="alLogin">
-      <a href="login.html"> Already have an account</a>
-      <a href="forgot.html">Forgot Password</a>
-     </div>
+        <div>
+          <label for="cPassword">Confirm password</label>
+          <input id="cPassword" name="cPassword" class="input" type="password" placeholder="Re-enter password" required />
+        </div>
 
-   </div>
+        <div class="row">
+          <label style="font-weight:700; color:var(--muted);"><input type="checkbox" id="agree" required /> I agree to the terms</label>
+        </div>
 
-</div>
-   
+        <button type="submit" class="btn" id="regBtn">Register</button>
 
+        <div id="msg" class="msg" role="status" aria-live="polite"></div>
+
+        <div class="links">
+          <a href="login.html">Already have an account?</a>
+          <a href="forgot.html">Forgot password?</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="js_file/register.js"></script>
 </body>
 </html>

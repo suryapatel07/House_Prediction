@@ -1,0 +1,16 @@
+house-price-prediction/
+│
+├── backend/                 ← All backend & ML files
+│   ├── model/               ← Trained ML models & preprocessing objects
+│   │   ├── house_price_model.pkl
+│   │   └── scaler.pkl
+│   │
+│   ├── scripts/             ← ML training scripts
+│   │   ├── train_model.py
+│   │   └── preprocess.py
+│   │
+│   ├── api/                 ← API endpoints (if using Flask/FastAPI)
+│   │   └── predict_api.py
+│   │
+│   └── utils/               ← Helper functions (data loading, evaluation)
+│       └── helper.py

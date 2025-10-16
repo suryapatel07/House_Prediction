@@ -7,7 +7,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/Predict.css">
 
 
 </head>
@@ -53,9 +53,11 @@
 </header>
 <main>
     <div class="mcontent">
-        <h2>Property Details</h2>
-        <div id="statesdiv">
-          <h5 style="color: #4f46e5;">Select State</h5>
+                  <!-- <h2">Property Details</h2> -->
+
+        <div class="equal">
+          <div id="statesdiv">
+           <h5 style="color: #4f46e5;">Select State</h5>
 
       <select id="state" name="state">
      <option value=""> Select State</option>
@@ -107,29 +109,86 @@
              <div class="choose">
                <select id="city" name="city">
                 <option value="">Select City</option>
-                <option value="delhi">Delhi</option>
-                <option value="mumbai">Mumbai</option>
-                <option value="kolkata">Kolkata</option>
-                <option value="chennai">Chennai</option>
-                <option value="lucknow">Lucknow</option>
+                
               </select>
             </div>
         </div>
+        <div class="subcity">
+          <h5 style="color: #4f46e5;">Sub City </h5>
+          <div class="choose">
+            <select name="subcity" id="subcity">
+              <option> Select Subcity</option>
+            </select>
+          </div>
+        </div>
+        <div class="areatype">
+          <h5 style="color: #4f46e5;">Area Type</h5>
+          <select id="areatype" name="areatype">
+            <option>Select Area</option>
+            <option>option1</option>
+            <option>Option2</option>
+            <option>Option3</option>
+          </select>
+        </div>
+        <div class="specialcase">
+          <h5 style="color: #4f46e5;">Special Case</h5>
+          <select id="specialcase" name="specialcase">
+            <option>Case1</option>
+            <option>Case2</option>
+            <option>Case3</option>
+          </select>
+        </div>
+        <div class="housesize">
+          <h5 style="color: #4f46e5;">House Size</h5>
+          <select id="housesize" name="housesize">
+            <option>Minimum </option>
+            <option>Large</option>
+            <option>Standar</option>
+          </select>
+        </div>
+        
+ </div>
+
+   <div class="equal2">
 
         <div class="area" >
             <h5 class="hmargin" style="color: #4f46e5;">Built-up Area(sq ft)</h5>
             <input id="tarea" class="proprt" name="tarea" type="number" placeholder="1200">
         </div>
+        <div class="stories">
+          <h5 class="hmargin" style="color: #4f46e5;"> No of Stories</h5>
+          <input id="stories" class="stories" type="number" placeholder="1">
+        </div>
+        <div class="bedrooms">
+          <h5 class="bedrooms" style="color: #4f46e5;">Bedrooms </h5>
+          <input id="bedrooms" name="bedrooms" type="number" placeholder="1">
+
+        </div>
         <div class="bathroom" >
             <h5 class="hmargin" style="color: #4f46e5;">bathrooms</h5>
-            <input  id="nbathe" name="nbathe" class="proprt" type="number" placeholder="2">
+            <input  id="nbathe" name="nbathe" class="proprt" type="number" placeholder="2" style="margin-top: 10px;">
         </div>
 
-         <div class="floor" >
-            <h5 class="hmargin"style="color: #4f46e5;">Floor</h5>
-            <input  id="nfloor" name="nfloor" class="proprt" type="number" placeholder="2">
+         <div class="kitchen">
+          <h5 class="kitchen" style="color: #4f46e5;">No of kitchen</h5>
+          <input id="kitchen" class="kitchen"  type="number" placeholder="1">
          </div>
+         <div class="furnished">
+          <h5 class="furnished" style="color: #4f46e5;">furnished Status</h5>
+          <select id="furnished" name="furnished">
+            <option>furnished</option>
+            <option>Semi Furnished</option>
+            <option>Unfurnished</option>
+          </select>
+         </div>
+         <div class="livingr">
+          <h5 style="color: #4f46e5;"> No of Living Room</h5>
+          <input id="livingr" class="livingr" placeholder="1">
+        </div>
+        
     </div>
+
+    <!-- </div> -->
 </main>
  <footer class="text-center py-3 mt-5 " style="color:white; background-color: #3D3C42; border-radius: 20px;">
   Project: <strong>House Price Prediction</strong> | Semester 5 <br>
@@ -138,6 +197,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js_file/Predict.js"></script>
 
 </body>
 </html>
