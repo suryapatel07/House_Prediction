@@ -280,3 +280,19 @@ main{
 
      border: 1px solid #bdc3c7;
 }
+.predictbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.predictbtn button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 30px;
+    color: #d3d4e6;
+    background-color: #4f46e5;
+    box-shadow: 5px 10px 15px black;
+}
