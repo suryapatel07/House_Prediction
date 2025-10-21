@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand " href="/">Home</a>
+    <a class="navbar-brand " href="index.html">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,16 +24,16 @@
       <ul class="navbar-nav">
         
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/Predict">Predict</a>
+          <a class="nav-link" aria-current="page" href="Predict.html">Predict</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/About">About Project</a>
+          <a class="nav-link" href="Aproject.html">About Project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Team">Team</a>
+          <a class="nav-link" href="Team.html">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link "  href="/Contact">Contact Us</a>
+          <a class="nav-link "  href="Contact.html">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -51,17 +51,15 @@
        
     </div>
 </header>
-<FORM action="/submit" , method="post">
 <main>
-  
     <div class="mcontent">
                   <!-- <h2">Property Details</h2> -->
 
         <div class="equal">
           <div id="statesdiv">
-           <h5 style="color: #4f46e5;">State</h5>
+           <h5 style="color: #4f46e5;">Select State</h5>
 
-      <select id="state" name="State">
+      <select id="state" name="state">
      <option value=""> Select State</option>
   <!-- States -->
   <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -107,62 +105,45 @@
 
         
         <div class="city">
-             <h5 style="color: #4f46e5;">District</h5>
+             <h5 style="color: #4f46e5;">City</h5>
              <div class="choose">
-               <select id="city" name="City">
-                <option value="">Select city</option>
+               <select id="city" name="city">
+                <option value="">Select City</option>
                 
               </select>
             </div>
         </div>
-        <div class="tehsil">
-          <h5 style="color: #4f46e5;">Sub District </h5>
-          <div class="choose">
-            <select name="SubDistrict" id="tehsil">
-              <option> Select Sub District</option>
-            </select>
-          </div>
-        </div>
-          <div class="subcity">
+        <div class="subcity">
           <h5 style="color: #4f46e5;">Sub City </h5>
           <div class="choose">
-            <select name="SubCity" id="subcity">
+            <select name="subcity" id="subcity">
               <option> Select Subcity</option>
             </select>
           </div>
         </div>
         <div class="areatype">
           <h5 style="color: #4f46e5;">Area Type</h5>
-          <select id="areatype" name="AreaType">
+          <select id="areatype" name="areatype">
             <option>Select Area</option>
-            <option value="Urban">Urban</option>
-            <option value="SemiUrban">SemiUrban</option>
-            <option value="Rural">Rural</option>
-          </select>
-        </div>
-        <div class="gradetype">
-          <h5 style="color: #4f46e5;">Grade Type</h5>
-          <select id="gradetype" name="GradeType">
-            <option>Select Grade</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
+            <option>option1</option>
+            <option>Option2</option>
+            <option>Option3</option>
           </select>
         </div>
         <div class="specialcase">
-          <h5 style="color: #4f46e5;">Road Width</h5>
-          <select id="specialcase" name="RoadInfo">
-            <option value=0>less than 6 meter</option>
-            <option value=1>more than 6 and less than 9 meter</option>
-            <option value=2>more than 9 and less than 12 meter</option>
+          <h5 style="color: #4f46e5;">Special Case</h5>
+          <select id="specialcase" name="specialcase">
+            <option>Case1</option>
+            <option>Case2</option>
+            <option>Case3</option>
           </select>
         </div>
         <div class="housesize">
           <h5 style="color: #4f46e5;">House Size</h5>
-          <select id="housesize" name="HouseSize">
-            <option value=1>Minimum </option>
-            <option value=0>Large</option>
-            <option value=2>Standard</option>
+          <select id="housesize" name="housesize">
+            <option>Minimum </option>
+            <option>Large</option>
+            <option>Standar</option>
           </select>
         </div>
         
@@ -172,53 +153,52 @@
 
         <div class="area" >
             <h5 class="hmargin" style="color: #4f46e5;">Built-up Area(sq ft)</h5>
-            <input id="tarea" class="proprt" name="Area" type="number" placeholder="1200">
+            <input id="tarea" class="proprt" name="tarea" type="number" placeholder="1200">
         </div>
         <div class="stories">
-          <h5 class="hmargin" style="color: #4f46e5;">Stories</h5>
-          <input id="stories" name="Stories" class="stories" type="number" placeholder="1">
+          <h5 class="hmargin" style="color: #4f46e5;"> No of Stories</h5>
+          <input id="stories" class="stories" type="number" placeholder="1">
         </div>
         <div class="bedrooms">
           <h5 class="bedrooms" style="color: #4f46e5;">Bedrooms </h5>
-          <input id="bedrooms" name="Bedrooms" type="number" placeholder="1">
+          <input id="bedrooms" name="bedrooms" type="number" placeholder="1">
 
         </div>
         <div class="bathroom" >
-            <h5 class="hmargin" style="color: #4f46e5;">Bathrooms</h5>
-            <input  id="nbathe" name="Bathrooms" class="proprt" type="number" placeholder="2" style="margin-top: 10px;">
+            <h5 class="hmargin" style="color: #4f46e5;">bathrooms</h5>
+            <input  id="nbathe" name="nbathe" class="proprt" type="number" placeholder="2" style="margin-top: 10px;">
         </div>
 
          <div class="kitchen">
-          <h5 class="kitchen" style="color: #4f46e5;">Kitchen</h5>
-          <input id="kitchen" class="kitchen" name="Kitchen" type="number" placeholder="1">
+          <h5 class="kitchen" style="color: #4f46e5;">No of kitchen</h5>
+          <input id="kitchen" class="kitchen"  type="number" placeholder="1">
          </div>
          <div class="furnished">
-          <h5 class="furnished" style="color: #4f46e5;">Furnishing Status</h5>
-          <select id="furnished" name="FurnishingStatus">
-            <option value=0>Furnished</option>
-            <option value=1>Semi Furnished</option>
-            <option value=2>UnFurnished</option>
+          <h5 class="furnished" style="color: #4f46e5;">furnished Status</h5>
+          <select id="furnished" name="furnished">
+            <option>furnished</option>
+            <option>Semi Furnished</option>
+            <option>Unfurnished</option>
           </select>
          </div>
          <div class="livingr">
-          <h5 style="color: #4f46e5;">Living Room</h5>
-          <input id="livingr" class="livingr" name="LivingRoom" type="number" placeholder="1">
+          <h5 style="color: #4f46e5;"> No of Living Room</h5>
+          <input id="livingr" class="livingr" placeholder="1">
         </div>
         
     </div>
 
 
     <!-- </div> -->
-     </Main>
+</main>
   <div class="predictbtn">
-        <input type="submit" value="Predict Now">
+        <button>Predict Now</button>
         </div>
-      </FORM>
-      
+
 
  <footer class="text-center py-3 mt-5 " style="color:white; background-color: #3D3C42; border-radius: 20px;">
   Project: <strong>House Price Prediction</strong> | Semester 5 <br>
-  <a href="/Privacy"style="color:#10B981; text-decoration:none; margin: 0 10px;">Privacy Policy</a> | <a href="/Terms" style="color:#10B981; text-decoration:none; margin: 0 10px;">Terms and Conditions</a><br>
+  <a href="Privacy.html"style="color:#10B981; text-decoration:none; margin: 0 10px;">Privacy Policy</a> | <a href="Terms.html" style="color:#10B981; text-decoration:none; margin: 0 10px;">Terms and Conditions</a><br>
   © 2025 Surya Prakash Patel & Swapnil Kesarwani
 </footer>
 
