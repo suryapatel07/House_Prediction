@@ -2,6 +2,56 @@
     /* -------------------------
        Basic reset & fonts
        ------------------------- */
+ body{
+      background: #EEAECA;
+      background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+       color: #111827;
+      }
+      .navbarme{
+      /* background: rgba(255, 255, 255, 0.596); */
+       /* box-shadow: 5px 3px 4px gray; */
+       border-radius: 100px;
+       margin-top: 5px;
+       padding-left: 30px;
+
+            
+    }
+
+    .navdivide{
+      height: auto;
+      width: auto;
+      /* border: 2px solid green; */
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+    .logo{
+    padding-left: 30px;
+    color: black;
+
+    }
+    .currency{
+        height: auto;
+        width: auto;
+        /* border: 2px solid yellow; */
+        padding-right: 60px;
+    }
+    .currency a{
+      text-decoration: none;
+      color: white;
+    }
+    .currency button{
+      background-color: #280A3E;
+      border-radius: 100px;
+      color: white;
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-shadow: gray;
+      border: black;
+    }
+
     *, *::before, *::after { box-sizing: border-box; }
     html, body { 
       height: 100%;
@@ -9,18 +59,14 @@
         font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; -webkit-font-smoothing: antialiased; 
         -moz-osx-font-smoothing: grayscale; 
       }
-    body {
-      background: linear-gradient(180deg, #f7f9fc 0%, #eef5fb 100%); /* soft light background */
-      color: #1f2937;
-      padding: 18px;
-    }
+   
 
     /* -------------------------
        Preserve your navbar style & structure
        ------------------------- */
     .navbarme{
-      background: rgba(255, 255, 255, 0.596); /* kept exactly from your code */
-      box-shadow: 5px 3px 4px gray;           /* kept exactly from your code */
+      /* background: rgba(255, 255, 255, 0.596); /* kept exactly from your code */
+      /* box-shadow: 5px 3px 4px gray;           kept exactly from your code */ */
       border-radius: 100px;
       margin-top: 5px;
       padding-left: 30px;
@@ -116,7 +162,7 @@
     }
   
 
-    .hero-title .logo {
+    .hero-title .logos {
       width:62px;
        height:62px; 
        border-radius:12px;
@@ -269,7 +315,7 @@
     }
 
     /* footer */
-    footer.text-center {
+    /* footer.text-center {
       margin-top:26px;
       padding:14px;
       border-radius:12px;
@@ -281,7 +327,7 @@
       justify-content:space-between;
       flex-wrap:wrap;
     }
-    footer a { color:#10B981; text-decoration:none; margin: 0 10px; font-weight:700; }
+    footer a { color:#10B981; text-decoration:none; margin: 0 10px; font-weight:700; } */
 
     /* responsive */
     @media (max-width: 920px) {

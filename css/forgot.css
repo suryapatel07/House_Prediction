@@ -47,6 +47,9 @@
       background: rgba(255,255,255,0.12); font-weight:700; font-size:20px;
       box-shadow: 0 8px 22px rgba(14,30,60,0.18);
     }
+    .logo a{
+      text-decoration: none;
+    }
     .card-header h1{ font-size:18px; margin:0; }
     .card-header p{ font-size:13px; margin:0; opacity:0.95; }
 

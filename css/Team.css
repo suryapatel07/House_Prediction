@@ -1,14 +1,60 @@
     
        body{
-        background-color:  white;
+      background: #EEAECA;
+      background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+       color: #111827;
+      }
+      .navbarme{
+      /* background: rgba(255, 255, 255, 0.596); */
+       /* box-shadow: 5px 3px 4px gray; */
+       border-radius: 100px;
+       margin-top: 5px;
+       padding-left: 30px;
+
+            
+    }
+
+    .navdivide{
+      height: auto;
+      width: auto;
+      /* border: 2px solid green; */
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+    .logo{
+    padding-left: 30px;
+    color: black;
+
+    }
+    .currency{
+        height: auto;
+        width: auto;
+        /* border: 2px solid yellow; */
+        padding-right: 60px;
+    }
+    .currency a{
+      text-decoration: none;
+      color: white;
+    }
+    .currency button{
+      background-color: #280A3E;
+      border-radius: 100px;
+      color: white;
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-shadow: gray;
+      border: black;
     }
     .chcolor{
       color: #4f46e5;
 
     }
           .navbarme{
-      background: rgba(255, 255, 255, 0.596);
-       box-shadow: 5px 3px 4px gray;
+      /* background: rgba(255, 255, 255, 0.596); */
+       /* box-shadow: 5px 3px 4px gray; */
        border-radius: 100px;
        margin-top: 5px;
        padding-left: 30px;
@@ -22,7 +68,7 @@
         width: 100%;
         border-radius: 9px;
         box-shadow: 5px 5px 15px gray;
-        background-color: #F1F6F9;
+        /* background-color: #F1F6F9; */
       }
       .surya{
         margin: 10px;
@@ -64,6 +110,6 @@
          box-shadow: 5px 5px 15px gray;
          padding: 10px;
          border-radius: 20px;
-         background-color: #F1F6F9;
+         background-color:transparent;
       }
     

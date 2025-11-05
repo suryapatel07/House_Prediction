@@ -12,17 +12,17 @@
     
     .setmain{
       height: auto;
-      width: 95%;
+      width: 100%;
       display: flex;
       justify-self: center;
-      margin-top: 70px;
+      margin-top: px;
       flex-direction: column;
       /*
       align-items: center; */
       /* border: 2px solid red; */
       background: #EEAECA;
       background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-      border-radius: 40px;
+      /* border-radius: 10px; */
 
     }
     .navbarme{
